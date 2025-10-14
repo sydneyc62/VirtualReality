@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded",function(){
 
  
   //Challenge 3: Change the <a-dodecahedron>'s position, radius and color
-    dod.setAttribute("position",{x:0,y:2,z:4});
+    dod.setAttribute("position",{x:0,y:3,z:-4});
     dod.setAttribute("color","red");
     dod.setAttribute("radius", 3);
 
