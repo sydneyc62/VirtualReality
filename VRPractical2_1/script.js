@@ -87,13 +87,13 @@ function createHouse(x,y,z){
   base.setAttribute("position","0 2 0");
   base.setAttribute("height","3");
   base.setAttribute("width","3");
-  base.setAttribute("depth","3");
+  base.setAttribute("depth","2.5");
 
   roof.setAttribute("segments-radial","3");
   roof.setAttribute("position","0 4.5 0");
   roof.setAttribute("rotation","-90 0 0");
 
-  roof.setAttribute("scale","2 2.5 2")
+  roof.setAttribute("scale","2.5 2.5 2")
 
 
   house.append(base);
