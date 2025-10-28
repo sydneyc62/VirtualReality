@@ -26,11 +26,6 @@ window.addEventListener("DOMContentLoaded",function() {
         
         sun.setAttribute("opacity",a);
         setTimeout(loop,10);
-        
-        
-        
-
-
 
 
     }
