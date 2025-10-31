@@ -1,15 +1,13 @@
-let rnd = (l,u) => Math.floor(Math.random()*(u-l) + l);
 
 class Rocket{
     constructor(x,y,z){
         this.x=x;
         this.y=y;
         this.z=z;
-        this.a=0;
-        this.da=rnd;
+        this.dx=0.1;
         this.obj = document.createElement("a-entity");
 
-        let top = document.createElement(a-cone);
+        let top = document.createElement("a-cone");
         top.setAttribute("radius-top","0");
         top.setAttribute("radius-bottom","0.5");
         top.setAttribute("position","0 0 -2");
@@ -38,8 +36,8 @@ class Rocket{
 
     };
     rise(){
-      this.a += this.da;
-      this.obj.setAttribute("position",{x:0,y:this.a,z:0});
+      this.y += this.dx;
+      this.obj.setAttribute("position",{x:this.x,y:this.y,z:this.z});
 
     }
 
