@@ -19,7 +19,6 @@ window.addEventListener("DOMContentLoaded",function() {
 
 function loop(){
   for(let rocket of rockets){
-
     rocket.rise();
   }
   

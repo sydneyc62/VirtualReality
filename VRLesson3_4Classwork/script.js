@@ -1,18 +1,20 @@
 let rnd = (l,u) => Math.floor(Math.random()*(u-l) + l);
-let time_text, balls = [], t = 60;
+let time_text, balls = [], t = 60,score_text;
 
 /* Challenge 3
    Create a variable to store score and set it to 0. 
    Create a variable to store the reference to the <a-text> for 
    displaying the score created in Challenge 1
 */ 
+let score = 0 ;
+let scoreDisplay = document.
 
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
   time_text = document.getElementById("time");
   // Challenge 4: Assign the variable to the <a-text> for displaying the score
-
+  score_text = document.getElementById("score");
   for(let i = 0;i < 10; i++){
     let x = rnd(-10,10);
     let y = rnd(-10,10);
