@@ -1,13 +1,14 @@
-let scene;
+let scene, car;
 
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene")
 
-  car.getElementById("car");
-  car.x = 0;
-  car.dx = 0.05;
+  car = document.getElementById("car");
+  car.r = 0;
+  car.dr = 1;
   car.move = false;
+
   car.addEventListener("click",function(){
     car.move = true;
   });
@@ -17,8 +18,8 @@ window.addEventListener("DOMContentLoaded",function() {
 
 function loop(){
   if(car.move){
-    car.x += car.dx;
-    car.setAttribute("position",{x:car.dx,y:2,z:0});
+    car.r += car.dr;
+    car.setAttribute('position',{x:car.dr,y:2,z:0});
   }
 
 
