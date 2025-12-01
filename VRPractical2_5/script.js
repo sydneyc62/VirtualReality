@@ -11,18 +11,18 @@
 */
 
 let maze = [
-  "---x-x----------------",
-  "---x-x----------------",
-  "---x-xxxx-------------",
-  "---x------------------",
-  "---xxxxxx-------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
+  "---y-y----------------",
+  "---y-y-----------xxxx-",
+  "---y-xxxxxxxxx---y--y-",
+  "---y---------y---y--y-",
+  "---xxxxxx----y---y--y-",
+  "--------y----y---y--y-",
+  "----xxxxx----xxxxx--y-",
+  "----y---------------y-",
+  "----xxxxx-----xxxxxxx-",
+  "--------y-----y-------",
+  "--------y-----y-------",
+  "--------y-----y-------",
 ];
 
 /* Challenge 2
@@ -42,6 +42,8 @@ window.addEventListener("DOMContentLoaded",function() {
     for(let c = 0; c < cols.length; c++){
       if(cols[c] == "x"){
         new Wall(c,1,r)
+      }else if(cols[c]=="y"){
+        new VertWall(c,1,r)
       }
     /* Challenge 4
        Make an appropriate decision based on the characters you chose to enter 
