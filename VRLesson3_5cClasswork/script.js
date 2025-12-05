@@ -23,11 +23,23 @@ function loop(){
      Note: Explore the Block class for an understanding of the 
      above two tasks.
   */
+  for(let block of blocks){
+    if(dart != undefined && distance(block.obj, dart.obj)<1){
+      block.shot = true;
+      block.shrink();
+    }
+  }
 
   if(dart){
     dart.fly();
   }
   window.requestAnimationFrame(loop);
+  
+  if(block){
+    block.shrink();
+  }
+  window.requestAnimationFrame(loop);
+
 }
 
 function distance(obj1,obj2){
@@ -41,3 +53,5 @@ function distance(obj1,obj2){
   let d = Math.sqrt(Math.pow(x1-x2,2) + Math.pow(y1-y2,2) + Math.pow(z1-z2,2));
   return d;
 }
+
+

@@ -6,6 +6,7 @@ window.addEventListener("DOMContentLoaded",function() {
   camera = document.querySelector("a-camera");
   target = document.querySelector("#target");
   // Challenge 2 - Create a variable for the second target
+  box2 = document.querySelector("#box")
   ball = document.querySelector("#ball");
   ball.x = -1;
   ball.dx = -0.002;
@@ -28,6 +29,8 @@ function loop(){
   */
   if(d1 < 1){
     ball.dx = -ball.dx;
+  }else if(d2 > 1){
+    ball.dx = ball.dx;
   }
 
   window.requestAnimationFrame(loop);
