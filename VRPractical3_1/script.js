@@ -55,6 +55,7 @@ function loop(){
     balloon2.setAttribute('position',{x:-2,y:balloon2.y,z:0});
   }
   
+  
   window.requestAnimationFrame( loop );
 }
 
