@@ -53,6 +53,7 @@ function loop(){
       ball.shot = true;
       ball.shrink();
     }
+    
   }
   // for(let ammoBox of ammo_boxes){
   //   if(ammoBox.disappear = true){
@@ -60,11 +61,11 @@ function loop(){
   //   }
   // }
 
-  if(ammoBox.disappear = true){
-    for(let ammoBox of ammo_boxes){
-      ammoBox.setAttribute("opacity",1);
-    }
-  }
+  // if(ammoBox.disappear = true){
+  //   for(let ammoBox of ammo_boxes){
+  //     ammoBox.setAttribute("opacity",1);
+  //   }
+  // }
 
   window.requestAnimationFrame(loop);
 }
