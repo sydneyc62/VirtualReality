@@ -3,7 +3,11 @@ class Robot{
     this.x = x;
     this.y = y;
     this.z = z;
-    this.obj = document.createElement("a-box");
+    this.obj = document.createElement("a-gltf-model");
+    this.obj.setAttribute("src","#robot");
+    this.obj.setAttribute("animation-mixer","");
+    this.obj.setAttribute("scale","0.05 0.05 0.05");
+
 
     this.obj.setAttribute("position",{x:this.x,y:this.y,z:this.z});
     this.obj.addEventListener("click",()=>{
